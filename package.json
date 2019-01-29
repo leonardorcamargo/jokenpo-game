@@ -1,0 +1,44 @@
+{
+  "name": "jokenpo-game",
+  "version": "1.0.0",
+  "description": "jokenpo game with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src/interface/server.js",
+    "startmon": "nodemon --exec babel-node src/interface/index.js",
+    "test": "mocha -w src/test --compilers js:@babel/register",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardorcamargo/jokenpo-game.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "jokenpo",
+    "game"
+  ],
+  "author": "Leonardo Romano Camargo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardorcamargo/jokenpo-game/issues"
+  },
+  "homepage": "https://github.com/leonardorcamargo/jokenpo-game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "commander": "^2.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}
